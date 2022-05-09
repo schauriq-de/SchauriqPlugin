@@ -2,7 +2,9 @@
 
 ### 🙌 Usage
 
+
 This plugin is the official plugin of the **schauriq.de** server!
+
 
 ### ❓ How to use it?
 
@@ -10,9 +12,10 @@ Coming soon...
 
 ### 📥 Download
 
-|  Version 		|  	Release 		| Download
+
+|  Version 		|  	Release 		| Download   
 |-------------|:-------------:|:-------------:|
-|   1.0-SNAPSHOT		|   	- 				|  	-
+|1.0-SNAPSHOT|   	- 	|  	-
 
 ✅ Compatible ❌ Not compatible ❓ Possibly
 
