@@ -1,0 +1,6 @@
+name: Schauriqplugin
+version: '${project.version}'
+main: de.schauriq.schauriqplugin.Main
+authors: [ schauriq, renaxdev, ju_dev ]
+description: This is the offical plugin of the schauriq.de server!
+website: schauriq.de
