@@ -33,9 +33,10 @@ public class MainScoreboard extends ScoreboardBuilder {
 
     }
 
+    List<String> filter = de.schauriq.schauriqplugin.Main.getPlugin(Main.class).getConfig().getStringList("filter");
+
     private void filterRangs() {
-        List<String> sec = de.schauriq.schauriqplugin.Main.getPlugin(Main.class).getConfig().getStringList("filter");
-        for (String key : sec) {
+        for (String key : filter) {
             if (player.getName().toUpperCase().contains(key)) {
                 player.setDisplayName(player.getDisplayName().toLowerCase().replace(key.toLowerCase(), " "));
             }

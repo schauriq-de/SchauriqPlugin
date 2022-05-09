@@ -8,7 +8,7 @@ public class WeatherChanger {
         new Thread(() -> {
             while(true) {
                 Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "weather clear");
-                delay(450000);
+                delay(450000); // Refresh all  7.5 minutes
             }
         }).start();
     }
