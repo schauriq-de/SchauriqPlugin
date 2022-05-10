@@ -5,3 +5,6 @@ authors: [ schauriq, renaxdev, ju_dev ]
 description: This is the official plugin of the schauriq.de server!
 website: schauriq.de
 commands:
+  group:
+    description: Returns this view
+    usage: /<command>

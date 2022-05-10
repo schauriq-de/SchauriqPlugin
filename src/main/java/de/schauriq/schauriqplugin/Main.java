@@ -1,5 +1,7 @@
 package de.schauriq.schauriqplugin;
 
+import de.schauriq.schauriqplugin.commands.groupCommands.Group;
+import de.schauriq.schauriqplugin.listener.ChatListener;
 import de.schauriq.schauriqplugin.listener.JoinListener;
 import de.schauriq.schauriqplugin.weatherchanger.WeatherChanger;
 import org.bukkit.Bukkit;
@@ -14,12 +16,16 @@ public final class Main extends JavaPlugin {
         System.out.println("Schauriq plugin enabled...");
 
         // Set default paths to config.yml
-        getConfig().addDefault("filter", new ArrayList<String>());
+        getConfig().addDefault("badWords", new ArrayList<String>());
         getConfig().options().copyDefaults(true);
         saveConfig();
 
         // Register events, commands and Co.
         Bukkit.getPluginManager().registerEvents(new JoinListener(), this);
+        Bukkit.getPluginManager().registerEvents(new ChatListener(), this);
+
+        getCommand("group").setExecutor(new Group());
+
         new WeatherChanger();
     }
 
